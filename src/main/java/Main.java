@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 
 public class Main {
     public static void main(String[] args) {
-        Server server = new Server(7777);
+        Server server = new Server(9999);
         initializeHandlers(server);
         server.printHandlers();
         server.start();

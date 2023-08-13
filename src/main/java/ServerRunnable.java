@@ -15,7 +15,7 @@ public class ServerRunnable implements Runnable {
     //enc-type - кодировка данных формы
 
     private static final String FORM_URLENCODED = "application/x-www-form-urlencoded";
-    private static final List<Object> allowedMethods = List.of();
+    private static final List<Object> allowedMethods = List.of(GET,POST);
 
     private final Socket socket;
     private final Server server;
@@ -24,6 +24,7 @@ public class ServerRunnable implements Runnable {
         this.socket = socket;
         this.server = server;
     }
+
 
     @Override
     public void run() {
